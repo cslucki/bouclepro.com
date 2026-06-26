@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Redirection vers la démo BouclePro</title>
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="1; url=https://lastprod.com/bouclepro-prototype/index.php?lang=fr">
+  <script>
+    (function () {
+      var browserLang = (navigator.language || navigator.userLanguage || "fr").toLowerCase();
+      var lang = browserLang.startsWith("en") ? "en" : "fr";
+      var target = "https://lastprod.com/bouclepro-prototype/index.php?lang=" + lang;
+      window.location.replace(target);
+    })();
+  </script>
+</head>
+<body>
+  <p>Redirection vers la démo BouclePro…</p>
+  <p>
+    <a href="https://lastprod.com/bouclepro-prototype/index.php?lang=fr">Version française</a> |
+    <a href="https://lastprod.com/bouclepro-prototype/index.php?lang=en">English version</a>
+  </p>
+</body>
+</html>
